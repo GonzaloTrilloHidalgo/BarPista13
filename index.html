@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Pista 13</title>
+    <!--BOOTSTRAP CSS-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="img/Logo2-sin-fondo.png">
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#"><img src="img/Logo2-sin-fondo.png" alt="Bar Pista 13 Logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">CARTA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#eventos">EVENTOS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero bg-dark text-white text-center">
+        <div class="container">
+            <h1 class="display-4">Bienvenidos a Bar Pista 13</h1>
+            <p class="lead">Disfruta de una experiencia gastronómica única.</p>
+            <a href="#menu" class="btn btn-primary btn-lg">Ver Carta</a>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Nuestra Carta</h2>
+            <p class="text-center">Explora nuestra variedad de platos deliciosos.</p>
+            
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Entrantes
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="img/comida.jpg" class="img-fluid" alt="Entrante 1">
+                                    <h5>Entrante 1</h5>
+                                    <p>Descripción del entrante 1.</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/comida.jpg" class="img-fluid" alt="Entrante 2">
+                                    <h5>Entrante 2</h5>
+                                    <p>Descripción del entrante 2.</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/comida.jpg" class="img-fluid" alt="Entrante 3">
+                                    <h5>Entrante 3</h5>
+                                    <p>Descripción del entrante 3.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                Tapas
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="img/comida.jpg" class="img-fluid" alt="Tapa 1">
+                                    <h5>Tapa 1</h5>
+                                    <p>Descripción de la tapa 1.</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/comida.jpg" class="img-fluid" alt="Tapa 2">
+                                    <h5>Tapa 2</h5>
+                                    <p>Descripción de la tapa 2.</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/comida.jpg" class="img-fluid" alt="Tapa 3">
+                                    <h5>Tapa 3</h5>
+                                    <p>Descripción de la tapa 3.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Platos Principales
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="img/comida.jpg" class="img-fluid" alt="Plato Principal 1">
+                                    <h5>Plato Principal 1</h5>
+                                    <p>Descripción del plato principal 1.</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/comida.jpg" class="img-fluid" alt="Plato Principal 2">
+                                    <h5>Plato Principal 2</h5>
+                                    <p>Descripción del plato principal 2.</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/comida.jpg" class="img-fluid" alt="Plato Principal 3">
+                                    <h5>Plato Principal 3</h5>
+                                    <p>Descripción del plato principal 3.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Postres
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="img/comida.jpg" class="img-fluid" alt="Postre 1">
+                                    <h5>Postre 1</h5>
+                                    <p>Descripción del postre 1.</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/comida.jpg" class="img-fluid" alt="Postre 2">
+                                    <h5>Postre 2</h5>
+                                    <p>Descripción del postre 2.</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/comida.jpg" class="img-fluid" alt="Postre 3">
+                                    <h5>Postre 3</h5>
+                                    <p>Descripción del postre 3.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-5 mt-5 
+    ">
+        <div class="container">
+            
+            <div class="row">
+                
+                <!-- Contact Info -->
+                <div class="col-md-12">
+                    <h2 class="section-title">Información de Contacto</h2>
+                    <p><strong>Dirección:</strong> Polígono Industrial, Carrer dels Matalassers, 8, H6 43204 Reus, Tarragona.</p>
+                    <p><strong>Teléfono:</strong> +34 123 456 789</p>
+                    <p><strong>Email:</strong> contacto@barpista13.com</p>
+                    <p><strong>Horario:</strong></p>
+                    <ul>
+                        <li>Lunes a Viernes: 10:00 AM - 11:00 PM</li>
+                        <li>Sábados: 10:00 PM - 12:00 AM</li>
+                        <li>Domingos: 10:00 PM - 11:00 PM</li>
+                    </ul>
+                    
+                    <!-- Google Map -->
+                    <div id="map" style="height: 300px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Bar Pista 13. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Leaflet JS -->
+   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+   <script>
+       var map = L.map('map').setView([41.11902338463271, 1.1561056229396347], 15); // Cambia las coordenadas según tu ubicación
+       
+       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+           maxZoom: 19,
+           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+       }).addTo(map);
+
+       L.marker([41.11902338463271, 1.1561056229396347]).addTo(map) // Cambia las coordenadas según tu ubicación
+           .bindPopup('<b>Polígono Industrial, Carrer dels Matalassers, 8, H6 </b><br>43204 Reus, Tarragona.')
+           .openPopup();
+   </script>
+</body>
+</html>
