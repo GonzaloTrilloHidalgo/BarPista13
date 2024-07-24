@@ -9,6 +9,26 @@ body {
     flex-direction: column;
 }
 
+.navbar-nav .nav-link {
+    display: flex; /* Usa flexbox para alinear el contenido */
+    align-items: center; /* Alinea los enlaces verticalmente */
+}
+
+.navbar-nav .nav-item {
+    position: relative; /* Necesario para posicionar la línea vertical */
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-item:not(:last-child)::after {
+    content: "|"; /* Carácter de línea vertical */
+    position: absolute;
+    right: -10px; /* Espacio entre el enlace y la línea vertical */
+    color: #333; /* Color de la línea vertical */
+    font-size: 1.5rem; /* Tamaño de la línea vertical */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .content {
     flex: 1;
 }
