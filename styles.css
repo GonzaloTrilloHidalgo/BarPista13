@@ -1,5 +1,6 @@
 /* styles.css */
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -10,23 +11,33 @@ body {
 }
 
 .navbar-nav .nav-link {
-    display: flex; /* Usa flexbox para alinear el contenido */
-    align-items: center; /* Alinea los enlaces verticalmente */
+    display: flex;
+    /* Usa flexbox para alinear el contenido */
+    align-items: center;
+    /* Alinea los enlaces verticalmente */
+    margin-top: 4px;
 }
 
 .navbar-nav .nav-item {
-    position: relative; /* Necesario para posicionar la línea vertical */
+    position: relative;
+    /* Necesario para posicionar la línea vertical */
     margin-right: 15px;
 }
 
-.navbar-nav .nav-item:not(:last-child)::after {
-    content: "|"; /* Carácter de línea vertical */
-    position: absolute;
-    right: -10px; /* Espacio entre el enlace y la línea vertical */
-    color: #333; /* Color de la línea vertical */
-    font-size: 1.5rem; /* Tamaño de la línea vertical */
-    top: 50%;
-    transform: translateY(-50%);
+@media (min-width: 992px) {
+    .navbar-nav .nav-item:not(:last-child)::after {
+        content: "|";
+        /* Carácter de línea vertical */
+        position: absolute;
+        right: -10px;
+        /* Espacio entre el enlace y la línea vertical */
+        color: #333;
+        /* Color de la línea vertical */
+        font-size: 1.5rem;
+        /* Tamaño de la línea vertical */
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 .content {
@@ -41,34 +52,55 @@ body {
 
 /* Estilos generales para la sección "Nosotros" */
 .section-title {
-    font-family: 'Arial', sans-serif; /* Fuente general */
-    font-size: 2.5rem; /* Tamaño de fuente grande */
-    font-weight: bold; /* Negrita */
-    color: #333; /* Color de texto oscuro */
-    text-transform: uppercase; /* Todo en mayúsculas */
-    text-align: center; /* Centrar el texto */
-    margin-bottom: 20px; /* Espacio debajo del título */
-    position: relative; /* Posición relativa para efectos */
+    font-family: 'Arial', sans-serif;
+    /* Fuente general */
+    font-size: 2.5rem;
+    /* Tamaño de fuente grande */
+    font-weight: bold;
+    /* Negrita */
+    color: #333;
+    /* Color de texto oscuro */
+    text-transform: uppercase;
+    /* Todo en mayúsculas */
+    text-align: center;
+    /* Centrar el texto */
+    margin-bottom: 20px;
+    /* Espacio debajo del título */
+    position: relative;
+    /* Posición relativa para efectos */
 }
+
 .section-title::before {
-    content: ""; /* Contenido vacío para el efecto */
-    position: absolute; /* Posición absoluta para el efecto */
-    left: 50%; /* Centrar horizontalmente */
-    bottom: -10px; /* Espacio desde la parte inferior del título */
-    transform: translateX(-50%); /* Centrar horizontalmente */
-    width: 200px; /* Ancho de la línea */
-    height: 3px; /* Grosor de la línea */
-    background-color: #f8c44c; /* Color de la línea */
+    content: "";
+    /* Contenido vacío para el efecto */
+    position: absolute;
+    /* Posición absoluta para el efecto */
+    left: 50%;
+    /* Centrar horizontalmente */
+    bottom: -10px;
+    /* Espacio desde la parte inferior del título */
+    transform: translateX(-50%);
+    /* Centrar horizontalmente */
+    width: 200px;
+    /* Ancho de la línea */
+    height: 3px;
+    /* Grosor de la línea */
+    background-color: #f8c44c;
+    /* Color de la línea */
 }
 
 #contacto {
-    margin-top: 300px; /* Ajuste para que las secciones no queden ocultas detrás del navbar */
+    margin-top: 300px;
+    /* Ajuste para que las secciones no queden ocultas detrás del navbar */
 }
 
 .navbar-brand img.logo {
-    height: 70px; /* Ajusta la altura del logo según sea necesario */
-    width: auto; /* Mantiene la proporción del logo */
-    margin-right: 10px; /* Añade un poco de margen a la derecha del logo */
+    height: 70px;
+    /* Ajusta la altura del logo según sea necesario */
+    width: auto;
+    /* Mantiene la proporción del logo */
+    margin-right: 10px;
+    /* Añade un poco de margen a la derecha del logo */
 }
 
 
@@ -85,6 +117,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .card-img-container img {
     width: 100%;
     height: auto;
@@ -92,17 +125,17 @@ body {
 
 .price {
     width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            background-color: #d9534f;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin: 10px auto 0;
-            text-align: center;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #d9534f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px auto 0;
+    text-align: center;
 }
 
 
@@ -142,7 +175,7 @@ body {
 
 #map {
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
 
