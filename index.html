@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +13,17 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Uicons CSS -->
+    <link href="/node_modules/@flaticon/flaticon-uicons/css/all/all.css" rel="stylesheet">
 </head>
+
 <body>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="#"><img src="img/Logo2-sin-fondo.png" alt="Bar Pista 13 Logo" class="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -41,7 +47,7 @@
     <!-- Hero Section -->
     <header class="hero bg-dark text-white text-center">
         <div class="container">
-            <h1 class="display-4">Bienvenidos a Bar Pista 13</h1>
+            <h1 class="display-4">Bienvenidos a Bar Pista 13 </h1>
             <p class="lead">Disfruta de una experiencia gastronómica única.</p>
             <a href="#menu" class="btn btn-primary btn-lg">Ver Carta</a>
         </div>
@@ -51,129 +57,190 @@
     <section id="menu" class="py-5">
         <div class="container">
             <h2 class="text-center section-title">Nuestra Carta</h2>
-            <p class="text-center">Explora nuestra variedad de platos deliciosos.</p>
-            
             <div id="accordion">
+
+                <!-- Entrantes -->
                 <div class="card">
-                    <div class="card-header" id="headingOne">
+                    <div class="card-header" id="headingEntrantes">
                         <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEntrantes"
+                                aria-expanded="true" aria-controls="collapseEntrantes">
                                 Entrantes
                             </button>
                         </h5>
                     </div>
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div id="collapseEntrantes" class="collapse show" aria-labelledby="headingEntrantes"
+                        data-parent="#accordion">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img src="img/comida.jpg" class="img-fluid" alt="Entrante 1">
-                                    <h5>Entrante 1</h5>
-                                    <p>Descripción del entrante 1.</p>
+                                    <img src="img/patatas-bravas.jpg" class="img-fluid card-img-top"
+                                        alt="Patatas Bravas">
+                                    <h5>Patatas Bravas</h5>
+                                    <p class="price">7,5€</p>
                                 </div>
                                 <div class="col-md-4">
-                                    <img src="img/comida.jpg" class="img-fluid" alt="Entrante 2">
-                                    <h5>Entrante 2</h5>
-                                    <p>Descripción del entrante 2.</p>
+                                    <img src="img/fingers-pollo.png" class="img-fluid card-img-top"
+                                        alt="Fingers de Pollo">
+                                    <h5>Fingers de Pollo</h5>
+                                    <p class="price">8€</p>
                                 </div>
                                 <div class="col-md-4">
-                                    <img src="img/comida.jpg" class="img-fluid" alt="Entrante 3">
-                                    <h5>Entrante 3</h5>
-                                    <p>Descripción del entrante 3.</p>
+                                    <img src="img/tequeños.png" class="img-fluid card-img-top" alt="Tequeños">
+                                    <h5>Tequeños</h5>
+                                    <p class="price">6,90€</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/torreznos.png" class="img-fluid card-img-top" alt="Torreznos">
+                                    <h5>Torreznos</h5>
+                                    <p class="price">8,50€</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/berenjenas-miel.jpg" class="img-fluid card-img-top"
+                                        alt="Berenjenas con Miel">
+                                    <h5>Berenjenas con Miel</h5>
+                                    <p class="price">8,50€</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Bocadillos -->
                 <div class="card">
-                    <div class="card-header" id="headingFour">
+                    <div class="card-header" id="headingBocadillos">
                         <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                Tapas
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                data-target="#collapseBocadillos" aria-expanded="false"
+                                aria-controls="collapseBocadillos">
+                                Bocadillos
                             </button>
                         </h5>
                     </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div id="collapseBocadillos" class="collapse" aria-labelledby="headingBocadillos"
+                        data-parent="#accordion">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img src="img/comida.jpg" class="img-fluid" alt="Tapa 1">
-                                    <h5>Tapa 1</h5>
-                                    <p>Descripción de la tapa 1.</p>
+                                    <img src="img/longaniza.jpg" class="img-fluid card-img-top" alt="El Romano">
+                                    <h5>El Romano</h5>
+                                    <p>Longaniza</p>
+                                    <p class="price">7€</p>
                                 </div>
                                 <div class="col-md-4">
-                                    <img src="img/comida.jpg" class="img-fluid" alt="Tapa 2">
-                                    <h5>Tapa 2</h5>
-                                    <p>Descripción de la tapa 2.</p>
+                                    <img src="img/lomo.png" class="img-fluid card-img-top" alt="La Tarraco">
+                                    <h5>La Tarraco</h5>
+                                    <p>Lomo, Queso, Tomate</p>
+                                    <p class="price">6,50€</p>
                                 </div>
                                 <div class="col-md-4">
-                                    <img src="img/comida.jpg" class="img-fluid" alt="Tapa 3">
-                                    <h5>Tapa 3</h5>
-                                    <p>Descripción de la tapa 3.</p>
+                                    <img src="img/bacon.webp" class="img-fluid card-img-top" alt="El Amfiteatre">
+                                    <h5>L'Amfiteatre</h5>
+                                    <p>Bacon, Queso</p>
+                                    <p class="price">6,50€</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/tortilla-francesa.png" class="img-fluid card-img-top"
+                                        alt="El Serrallo">
+                                    <h5>Serrallo</h5>
+                                    <p>Tortilla Francesa</p>
+                                    <p class="price">5,50€</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/atun.jpg" class="img-fluid card-img-top" alt="El Mediterráneo">
+                                    <h5>Mediterráneo</h5>
+                                    <p>Atún, Huevo Cocido, Lechuga</p>
+                                    <p class="price">6,50€</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/fuet.jpg" class="img-fluid card-img-top" alt="El Pont del Diable">
+                                    <h5>Pont del Diable</h5>
+                                    <p>Fuet, Tomate</p>
+                                    <p class="price">4,50€</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/jamon_dulce.jpg" class="img-fluid card-img-top" alt="El Balcó">
+                                    <h5>Balcó</h5>
+                                    <p>Jamón Dulce, Queso</p>
+                                    <p class="price">4€</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/queso.png" class="img-fluid card-img-top" alt="El Casco Antiguo">
+                                    <h5>Els Pallaresos</h5>
+                                    <p>Queso, Tomate</p>
+                                    <p class="price">5€</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/jamon.png" class="img-fluid card-img-top" alt="El Rambla Nova">
+                                    <h5>Rambla Nova</h5>
+                                    <p>Jamón Serrano, Tomate</p>
+                                    <p class="price">5,50€</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/extra.png" class="img-fluid card-img-top" alt="Extra">
+                                    <h5>Suplemento de otro ingrediente</h5>
+                                    <p class="price">0,50€ más</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Bebidas -->
                 <div class="card">
-                    <div class="card-header" id="headingTwo">
+                    <div class="card-header" id="headingBebidas">
                         <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Platos Principales
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseBebidas"
+                                aria-expanded="false" aria-controls="collapseBebidas">
+                                Bebidas
                             </button>
                         </h5>
                     </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div id="collapseBebidas" class="collapse" aria-labelledby="headingBebidas"
+                        data-parent="#accordion">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img src="img/comida.jpg" class="img-fluid" alt="Plato Principal 1">
-                                    <h5>Plato Principal 1</h5>
-                                    <p>Descripción del plato principal 1.</p>
+                                    <img src="img/cocacola-zero.webp" class="img-fluid card-img-top"
+                                        alt="Coca-Cola Zero">
+                                    <h5>Coca-Cola Zero</h5>
+                                    <p class="price">2,5€</p>
                                 </div>
                                 <div class="col-md-4">
-                                    <img src="img/comida.jpg" class="img-fluid" alt="Plato Principal 2">
-                                    <h5>Plato Principal 2</h5>
-                                    <p>Descripción del plato principal 2.</p>
+                                    <img src="img/cocacola.png" class="img-fluid card-img-top" alt="Coca-Cola">
+                                    <h5>Coca-Cola</h5>
+                                    <p class="price">2,5€</p>
                                 </div>
                                 <div class="col-md-4">
-                                    <img src="img/comida.jpg" class="img-fluid" alt="Plato Principal 3">
-                                    <h5>Plato Principal 3</h5>
-                                    <p>Descripción del plato principal 3.</p>
+                                    <img src="img/nestea.jpg" class="img-fluid card-img-top" alt="Nestea">
+                                    <h5>Nestea</h5>
+                                    <p class="price">2,5€</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/aquarius.png" class="img-fluid card-img-top" alt="Aquarius">
+                                    <h5>Aquarius</h5>
+                                    <p class="price">2,5€</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/fanta-limon.png" class="img-fluid card-img-top" alt="Fanta Limón">
+                                    <h5>Fanta Limón</h5>
+                                    <p class="price">2,5€</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/fanta-naranja.png" class="img-fluid card-img-top" alt="Fanta Naranja">
+                                    <h5>Fanta Naranja</h5>
+                                    <p class="price">2,5€</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/agua.png" class="img-fluid card-img-top" alt="Agua">
+                                    <h5>Agua</h5>
+                                    <p class="price">1,50€</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Postres
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="img/comida.jpg" class="img-fluid" alt="Postre 1">
-                                    <h5>Postre 1</h5>
-                                    <p>Descripción del postre 1.</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="img/comida.jpg" class="img-fluid" alt="Postre 2">
-                                    <h5>Postre 2</h5>
-                                    <p>Descripción del postre 2.</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="img/comida.jpg" class="img-fluid" alt="Postre 3">
-                                    <h5>Postre 3</h5>
-                                    <p>Descripción del postre 3.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -182,13 +249,14 @@
     <section id="contacto" class="py-5 mt-5 
     ">
         <div class="container">
-            
+
             <div class="row">
-                
+
                 <!-- Contact Info -->
                 <div class="col-md-12">
                     <h2 class="section-title">Información de Contacto</h2>
-                    <p><strong>Dirección:</strong> Polígono Industrial, Carrer dels Matalassers, 8, H6 43204 Reus, Tarragona.</p>
+                    <p><strong>Dirección:</strong> Polígono Industrial, Carrer dels Matalassers, 8, H6 43204 Reus,
+                        Tarragona.</p>
                     <p><strong>Teléfono:</strong> +34 123 456 789</p>
                     <p><strong>Email:</strong> contacto@barpista13.com</p>
                     <p><strong>Horario:</strong></p>
@@ -197,7 +265,7 @@
                         <li>Sábados: 10:00 PM - 12:00 AM</li>
                         <li>Domingos: 10:00 PM - 11:00 PM</li>
                     </ul>
-                    
+
                     <!-- Google Map -->
                     <div id="map" style="height: 300px; width: 100%;"></div>
                 </div>
@@ -215,18 +283,19 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Leaflet JS -->
-   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-   <script>
-       var map = L.map('map').setView([41.11902338463271, 1.1561056229396347], 15); // Cambia las coordenadas según tu ubicación
-       
-       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-           maxZoom: 19,
-           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-       }).addTo(map);
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([41.11902338463271, 1.1561056229396347], 15); // Cambia las coordenadas según tu ubicación
 
-       L.marker([41.11902338463271, 1.1561056229396347]).addTo(map) // Cambia las coordenadas según tu ubicación
-           .bindPopup('<b>Polígono Industrial, Carrer dels Matalassers, 8, H6 </b><br>43204 Reus, Tarragona.')
-           .openPopup();
-   </script>
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([41.11902338463271, 1.1561056229396347]).addTo(map) // Cambia las coordenadas según tu ubicación
+            .bindPopup('<b>Polígono Industrial, Carrer dels Matalassers, 8, H6 </b><br>43204 Reus, Tarragona.')
+            .openPopup();
+    </script>
 </body>
+
 </html>
