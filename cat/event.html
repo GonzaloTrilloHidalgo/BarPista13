@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Próximamente - Bar Pista 13</title>
+    <title>Properament - Bar Pista 13</title>
     <!--FAVICON-->
-    <link rel="icon" type="image/png" href="img/Logo2-sin-fondo.png">
+    <link rel="icon" type="image/png" href="../img/Logo2-sin-fondo.png">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <style>
         .bg-cover {
             margin-top: 50px;
@@ -41,25 +41,26 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="index.html"><img src="img/Logo2-sin-fondo.png" alt="Bar Pista 13 Logo"
-                class="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="indexcat.html"><img src="../img/Logo2-sin-fondo.png" alt="Logo Bar Pista 13" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">INICIO</a>
+                    <a class="nav-link" href="indexcat.html">INICI</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#menu">CARTA</a>
+                    <a class="nav-link" href="indexcat.html#menu">MENÚ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#nosotros">NOSOTROS</a>
+                    <a class="nav-link" href="nosaltres.html">NOSALTRES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="eventos.html">EVENTOS</a>
+                    <a class="nav-link" href="event.html">ESDEVENIMENTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../es/index.html"><img src="../img/flag-es.png" alt="Español" style="width: 20px; height: 20px; margin-right: 5px;">Español</a>
                 </li>
             </ul>
         </div>
@@ -68,15 +69,15 @@
     <div class="bg-cover">
         <div class="overlay">
             <div class="title">Bar Pista 13</div>
-            <div class="subtitle">No disponible ahora mismo</div>
-            <div class="subtitle">Se abrirá próximamente</div>
+            <div class="subtitle">No disponible ara mateix</div>
+            <div class="subtitle">Obrirà properament</div>
             <div class="countdown" id="countdown"></div>
         </div>
     </div>
 
      <!-- Footer -->
      <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Bar Pista 13. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Bar Pista 13. Tots els drets reservats.</p>
     </footer>
 
     <!-- Bootstrap JS and dependencies -->
@@ -84,9 +85,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        // JavaScript para un contador regresivo
+        // JavaScript per a un compte enrere
         const countdownElement = document.getElementById('countdown');
-        const targetDate = new Date('2024-12-31T23:59:59').getTime(); // Cambia esta fecha según sea necesario
+        const targetDate = new Date('2024-12-31T23:59:59').getTime(); // Canvia aquesta data segons sigui necessari
 
         const updateCountdown = () => {
             const now = new Date().getTime();
@@ -101,7 +102,7 @@
 
             if (distance < 0) {
                 clearInterval(countdownInterval);
-                countdownElement.innerHTML = '¡Ya estamos abiertos!';
+                countdownElement.innerHTML = 'Ja estem oberts!';
             }
         };
 

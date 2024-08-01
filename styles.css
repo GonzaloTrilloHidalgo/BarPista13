@@ -10,6 +10,59 @@ body {
     flex-direction: column;
 }
 
+.card-img-top {
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-item img {
+    height: 180px; /* Ajusta la altura del carrusel según sea necesario */
+    object-fit: cover; /* Asegura que las imágenes cubran el área sin deformarse */
+}
+
+/* Ajustar el tamaño del contenedor de las flechas y centrar el icono */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%; /* Ajusta el ancho del área de las flechas */
+    height: 100%; /* Asegura que el área de las flechas cubra todo el contenedor del carrusel */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ff9100; /* Color de fondo del círculo */
+    border-radius: 50%; /* Hace el fondo circular */
+    width: 80px; /* Ajusta el tamaño del círculo */
+    height: 50px; /* Ajusta el tamaño del círculo */
+    background-size: 100% 100%; /* Asegura que el icono esté bien dimensionado */
+    background-repeat: no-repeat; /* Evita la repetición del icono */
+}
+
+/* Asegurarse de que el icono esté centrado dentro del círculo */
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    font-family: 'FontAwesome'; /* Asegúrate de que FontAwesome esté cargado */
+    font-size: 20px; /* Tamaño del icono */
+    color: #ffffff; /* Color del icono */
+    line-height: 40px; /* Alinea el icono verticalmente */
+    text-align: center; /* Centra el icono horizontalmente */
+}
+
+/* Flecha hacia la izquierda */
+.carousel-control-prev-icon::before {
+    content: "\f053"; /* Código para la flecha hacia la izquierda */
+}
+
+/* Flecha hacia la derecha */
+.carousel-control-next-icon::before {
+    content: "\f054"; /* Código para la flecha hacia la derecha */
+}
+
+/* Opcional: Cambiar el color de las flechas cuando se pasa el ratón por encima */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo al pasar el ratón */
+}
+
 .navbar-nav .nav-link {
     display: flex;
     /* Usa flexbox para alinear el contenido */
@@ -42,6 +95,11 @@ body {
 
 .content {
     flex: 1;
+}
+
+.hero .carousel-inner img {
+    height: 70vh; /* Ajusta la altura del carrusel */
+    object-fit: cover; /* Asegura que las imágenes cubran completamente el área del carrusel */
 }
 
 .hero {

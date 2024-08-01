@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosaltres - Bar Pista 13</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="../img/Logo2-sin-fondo.png">
+    <style>
+        /* CSS per assegurar que les imatges en les targetes tinguin la mateixa mida */
+        .card {
+            max-width: 300px; /* Amplada màxima de les targetes */
+            margin: 0 auto; /* Centrar les targetes horitzontalment */
+            margin-bottom: 20px; /* Espai a sota de cada targeta */
+        }
+        .card-img-top {
+            height: 200px; /* Mida fixa per a l'alçada */
+            object-fit: cover; /* Ajust d'imatge per cobrir l'àrea sense deformar */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="indexcat.html"><img src="../img/Logo2-sin-fondo.png" alt="Logo Bar Pista 13" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="indexcat.html">INICI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="indexcat.html#menu">MENÚ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosaltres.html">NOSALTRES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="event.html">ESDEVENIMENTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../es/index.html"><img src="../img/flag-es.png" alt="Español" style="width: 20px; height: 20px; margin-right: 5px;">Español</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- About Section -->
+        <section id="nosaltres" class="py-5">
+            <div class="container">
+                <h2 class="section-title">Coneix el Nostre Equip</h2>
+                <p class="text-center">A Bar Pista 13, el nostre equip està aquí per oferir-te la millor experiència gastronòmica. Et presentem als responsables que ho fan possible.</p>
+
+                <div class="row">
+                    <!-- Juanma -->
+                    <div class="col-md-6">
+                        <div class="card mb-4 bg-dark text-light">
+                            <img src="../img/juanma.png" class="card-img-top" alt="Juanma SanMiguel">
+                            <div class="card-body">
+                                <h5 class="card-title">Juan Manuel San Miguel</h5>
+                                <p class="card-text">Juan Manuel és el nostre cap de cuina. Amb anys d'experiència al sector, sempre s'assegura que els nostres clients rebin un bon servei.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Irene -->
+                    <div class="col-md-6">
+                        <div class="card mb-4 bg-dark text-light">
+                            <img src="../img/Irene.png" class="card-img-top" alt="Irene Arjona">
+                            <div class="card-body">
+                                <h5 class="card-title">Irene Arjona</h5>
+                                <p class="card-text">Irene és la nostra encarregada del bar i també cuinera. La seva ambició la porta a oferir als nostres clients els millors plats i l'atenció possible.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Bar Pista 13. Tots els drets reservats.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
