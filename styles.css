@@ -200,6 +200,17 @@ body {
     text-align: center;
 }
 
+.badge-circle {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
 
 .card-body {
     text-align: center;
